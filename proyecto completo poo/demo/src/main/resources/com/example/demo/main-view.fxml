@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane alignment="CENTER" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.example.demo.MainController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <Label text="ID Usuario:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+    <TextField fx:id="idUsuarioTextField" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+    <Label text="Nombre:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <TextField fx:id="nombreTextField" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+    <Label text="Estado:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <TextField fx:id="estadoUsuarioTextField" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+    <Label text="Teléfono:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+    <TextField fx:id="telefonoTextField" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+
+    <Label text="Dirección:" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+    <TextField fx:id="direccionTextField" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+
+    <Label text="Email:" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+    <TextField fx:id="emailTextField" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+
+    <Label text="Cédula:" GridPane.columnIndex="0" GridPane.rowIndex="6"/>
+    <TextField fx:id="cedulaTextField" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+
+    <Label text="Password:" GridPane.columnIndex="0" GridPane.rowIndex="7"/>
+    <TextField fx:id="passwordTextField" GridPane.columnIndex="1" GridPane.rowIndex="7"/>
+
+    <Button text="Guardar" GridPane.columnIndex="2" GridPane.rowIndex="9"  onAction="#guardarUsuario"/>
+    <Button text="Limpiar" GridPane.columnIndex="3" GridPane.rowIndex="9" onAction="#limpiarUsuario"/>
+    <Button text="Editar" GridPane.columnIndex="4" GridPane.rowIndex="9" onAction="#editarUsuario"/>
+    <Button text="Buscar" GridPane.columnIndex="2" GridPane.rowIndex="10" onAction="#buscarUsuario"/>
+    <Button text="Eliminar" GridPane.columnIndex="3" GridPane.rowIndex="10" onAction="#eliminarUsuario"/>
+
+</GridPane>
